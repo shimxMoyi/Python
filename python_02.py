@@ -4,7 +4,7 @@ from random import choice
 from string import ascii_letters, digits
 
 zifuji = ascii_letters + digits
-def suijizifu(n = 8):
+def suijizifu(n=8):
     result = ''
     for i in range(n):
         zifu = choice(zifuji)
