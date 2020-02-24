@@ -12,5 +12,7 @@
 | 007  | [python_07.py](./python_07.py) |     添加用户，并设置随机密码     | 2020-02-24 |
 | 008  | [python_08.py](./python_08.py) |         Ansible 下载模块         | 2020-02-24 |
 | 009  | [python_09.py](./python_09.py) |         Ansible 拷贝模块         | 2020-02-24 |
+| 010  | [python_10.py](./python_10.py) |         获取北京天气信息         | 2020-02-24 |
+| 011  | [python_11.py](./python_11.py) |       钉钉机器人——天气助手       | 2020-02-24 |
 
 
