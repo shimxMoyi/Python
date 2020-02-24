@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+'''ansible [hosts] -m python_08 -a "url=[url] dst=[path]"'''
+
+from ansible.module_utils.basic import AnsibleModule
+import wget
+
+def main():
+    module = AnsibleModule(
+        argument_spec=dict(
+            url=dict(required=True, type='str'),
+            dest=dict(required=True, type='str')
+        )
+    )
+    wget.download(module.params['url'], module.params['dest'])
+    module.exit_json(changed=True)
+
+if __name__ == '__main__':
+    main()
