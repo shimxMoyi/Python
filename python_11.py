@@ -23,8 +23,6 @@ def get_secret():
     string_to_sign = '%s\n%s' % (timestamp, secret)
     hmac_code = hmac_code = hmac.new(secret.encode('utf-8'), string_to_sign.encode('utf-8'), digestmod=hashlib.sha256).digest()
     sign = quote_plus(base64.b64encode(hmac_code))
-    print(timestamp)
-    print(sign)
     return [timestamp, sign]
 
 def ding_talk(weather, secret):
